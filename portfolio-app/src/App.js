@@ -1,13 +1,20 @@
 import React from 'react';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+// import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 //local
 import './App.css';
+import Banner from './components/Banner.js';
+import AboutMe from './components/AboutMe.js';
+import MySkills from './components/MySkills';
+import ProjectList from './projects/ProjectList';
 
 function App() {
   return (
     <div className="App">
-      <h1>Micah's Portfolio in Progress </h1>
+      <Banner />
+      <AboutMe />
+      <MySkills />
+      <ProjectList />
     </div>
   );
 }
