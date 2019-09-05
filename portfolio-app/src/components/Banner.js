@@ -6,7 +6,7 @@ import styled from 'styled-components';
 import './banner.scss';
 
 const Wrapper = styled.div`
-    height: 150vh;
+    height: 100vh;
     position: relative;
     overflow: hidden;
     background-image: url(${BannerImg});
@@ -18,7 +18,7 @@ const Wrapper = styled.div`
 const BannerContainer = styled.div`
     width: 100%;
     background: rgba(37%, 45%, 52%, 0.5);
-    height: 150vh;
+    height: 100vh;
     h1{
         z-index: 100;
         position: absolute;
