@@ -1,6 +1,5 @@
 import React from 'react'
-import BannerImg from '../assets/img/mountainlinkedin.jpg';
-import MyImg from '../assets/img/mypic.jpg';
+import MyImg from '../assets/img/anotherpicofme.jpg';
 import styled from 'styled-components';
 
 import './banner.scss';
@@ -9,7 +8,7 @@ const Wrapper = styled.div`
     height: 100vh;
     position: relative;
     overflow: hidden;
-    background-image: url(${BannerImg});
+    background-image: url(${MyImg});
     background-size: cover;
     background-position: center;
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.4);
@@ -19,25 +18,31 @@ const BannerContainer = styled.div`
     width: 100%;
     background: rgba(37%, 45%, 52%, 0.5);
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     h1{
         z-index: 100;
-        position: absolute;
-        width: 100%;
+        // position: absolute;
+        // width: 135%;
         font-family: 'Gayathri', sans-serif;
         font-size: 4.3rem;
         color: white;
-        text-shadow: 4px 2px black;
-        top: 47%
+        text-shadow: 2px 2px black;
+        // top: 10%
+        // margin-top: 10%;
     }
     h2{
         font-family: 'Gayathri', sans-serif;
         font-size: 3.4rem;
         z-index: 100;
-        width: 100%;
-        top: 60%;
-        position: absolute;
+        // width: 135%;
+        // top: 30%;
+        // position: absolute;
         color: white;
-        text-shadow: 4px 2px black;
+        text-shadow: 2px 2px black;
+        // padding-top: 3%;
     }
     button {
         color: darkgreen;
@@ -48,12 +53,12 @@ const BannerContainer = styled.div`
         width: 205px;
         height: 45px;
         margin: 15px;
-        position: absolute;
+        // position: absolute;
         z-index: 5;
-        top: 80%;
-        right: 0;
-        left: 41%;
-        bottom: 0;
+        // top: 80%;
+        // right: 0;
+        // left: 41%;
+        // bottom: 0;
         animation: TEXT-FADE 4s ease;
         padding-top: 5px;
         &:hover {
@@ -90,7 +95,6 @@ const Banner = (props) => {
     return(
         <Wrapper>
             <BannerContainer>
-                <HeadShot src = {MyImg} alt = 'headshot' />
                 <h1>Micah Jones</h1> 
                 <h2>Full-Stack Web Developer</h2>
                 <button>See My Projects</button>
@@ -104,3 +108,4 @@ export default Banner;
 
 
 // <BannerPic src = {BannerImg} alt = 'banner img' />
+//<HeadShot src = {MyImg} alt = 'headshot' />
