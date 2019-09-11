@@ -5,7 +5,7 @@ import React from 'react';
 import './App.css';
 import Banner from './components/Banner.js';
 import AboutMe from './components/AboutMe.js';
-import MySkills from './components/MySkills';
+
 import ProjectList from './projects/ProjectList';
 
 function App() {
@@ -13,7 +13,7 @@ function App() {
     <div className="App">
       <Banner />
       <AboutMe />
-      <MySkills />
+     
       <ProjectList />
     </div>
   );

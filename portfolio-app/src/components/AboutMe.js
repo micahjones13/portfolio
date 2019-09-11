@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components';
 
-import { } from '@fortawesome/fontawesome-svg-core';
+
 
 const AboutMeContainer = styled.div`
     display: flex;
@@ -31,6 +31,9 @@ const SkillsWrapper = styled.div`
     color: white;
     display: flex;
     flex-direction: column;
+    .bottom{
+        margin-bottom: 5%;
+    }
 
 `;
 const Skills = styled.div`
@@ -39,15 +42,35 @@ const Skills = styled.div`
     text-align: center;
     padding: 1%;
     margin-top: 2%;
+    margin-left: 5%;
+    margin-right: 5%
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    .hoverSkills{
+        display: none;
+     
+    }
+    :hover{
+        transform: scale(1.1);
+        .hoverSkills{
+            color: white;
+            display: block;
+            // background: #07a828;
+            width: 100%;
+           margin: 0;
+           
+        }
+    }
     i {
         font-size: 3rem;
     }
     h3{
         font-size: 2.5rem;
         margin: 5px;
+       
     }
+  
+   
    
 `;
 
@@ -69,9 +92,51 @@ const AboutMe = (props) => {
                 </p>
             </AboutMeWrapper>
             <SkillsWrapper>
-                <h1>My Skills</h1>
-                    <Skills><i className="fab fa-react" /><h3>React.js</h3></Skills>
-                    <Skills><i className="fab fa-react" /><h3>React.js</h3></Skills>       
+                <h1>Technical Skills</h1>
+                
+                <Skills><i className="fab fa-html5" />
+                        <div className = 'hoverSkills'>
+                            <p>Well versed in semantic HTML and JSX</p>
+                        </div>
+                        <h3>HTML</h3>
+                    </Skills>  
+
+                    <Skills><i className="fab fa-css3" />
+                        <div className = 'hoverSkills'>
+                            <p>Practiced in CSS, LESS, and SASS</p>
+                        </div>
+                        <h3>CSS</h3>
+                    </Skills>      
+
+                    <Skills><i className="fab fa-js-square" />
+                        <div className = 'hoverSkills'>
+                            <p>Solid JavaScript fundamentals</p>
+                        </div>
+                        <h3>JavaScript</h3>
+                    </Skills>   
+
+                    <Skills><i className="fab fa-react" />
+                        <div className = 'hoverSkills'>
+                            <p>Using React/Redux is a personal favorite</p>
+                        </div>
+                        <h3>React.js</h3>
+                    </Skills>
+
+                    <Skills><i className="fab fa-node-js" />
+                        <div className = 'hoverSkills'>
+                            <p>Experience with Node.js/Express backends</p>
+                        </div>
+                        <h3>Node.js</h3>
+                    </Skills>
+
+                    <div className = 'bottom'>
+                        <Skills><i className="fab fa-github" />
+                            <div className = 'hoverSkills'>
+                                <p>Well versed in Git flow</p>
+                            </div>
+                            <h3>Git</h3>
+                        </Skills>       
+                    </div>
             </SkillsWrapper>
         </AboutMeContainer>
     )
