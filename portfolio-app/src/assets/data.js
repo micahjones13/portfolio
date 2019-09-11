@@ -1,3 +1,6 @@
+import TT from '../assets/img/tabt.PNG';
+
+
 export const data = [
     {
         id: 1,
@@ -11,7 +14,7 @@ export const data = [
         id: 2,
         title: 'Tabless Thursdays',
         description: 'Tabless Thursdays is a tab management app that stores tab information in order to de-clutter the browser.',
-        image: '',
+        image: TT,
         githubRepo: 'https://github.com/tabless-thursday-6-27-2019/tabless-thursday-frontend',
         deploymentURL: 'https://tabless-thursday-fe.netlify.com/',
     },
