@@ -111,15 +111,20 @@ const AboutMe = props => {
           any opportunities in the tech field.
         </p>
         <p>
-          Lorem ipsum Lorem ipsum lorem ipsum. Lorem ipsum Lorem ipsum lorem
-          ipsum. Lorem ipsum Lorem ipsum lorem ipsum. Lorem ipsum Lorem ipsum
-          lorem ipsum. Lorem ipsum Lorem ipsum lorem ipsum.
+          I've worked mostly in the caregiving industry supporting individuals
+          with special needs. After 3 years of caregiving, I was promoted to the
+          office assitant position where I managed those same individuals
+          finacials and facilitated communication throught the 4 different
+          departments there. Throughout all of this, I was learning to code on
+          the side, waiting for the opportunity to attend a school that would
+          solidify my knowledge.
         </p>
         <p>
-          Lorem ipsum Lorem ipsum lorem ipsum.Lorem ipsum Lorem ipsum lorem
-          ipsum.Lorem ipsum Lorem ipsum lorem ipsum.Lorem ipsum Lorem ipsum
-          lorem ipsum. Lorem ipsum Lorem ipsum lorem ipsum.Lorem ipsum Lorem
-          ipsum lorem ipsum.Lorem ipsum Lorem ipsum lorem ipsum.
+          That school came in the form of Lambda School, a 9+ month, fully
+          immersive full stack bootcamp. I began Lambda in April of 2019, and
+          can proudly say I am on track to graduate in Janurary of 2020. I'm
+          thrilled to begin my career in web development, and would love to hear
+          from you! Let's find out what my skills can do for your company.
         </p>
       </AboutMeWrapper>
       <SkillsWrapper>

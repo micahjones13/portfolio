@@ -62,8 +62,8 @@ const BannerContainer = styled.div`
     }
   }
   button {
-    color: darkgreen;
-    border: 2px solid green;
+    color: black;
+    border: 2px solid darkgreen;
     background: rgba(54%, 62%, 52%, 0.8);
     font-size: 20px;
     font-family: "Gayathri", sans-serif;
@@ -79,7 +79,7 @@ const BannerContainer = styled.div`
     animation: TEXT-FADE 4s ease;
     padding-top: 5px;
     &:hover {
-      background: forestgreen;
+      background: #00b359;
       color: white;
       cursor: pointer;
     }

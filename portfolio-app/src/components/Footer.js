@@ -2,13 +2,13 @@ import React from "react";
 import styled from "styled-components";
 
 const ContactMe = styled.div`
-  background: gray;
+  background: lightgray;
   display: flex;
   flex-direction: column;
   font-family: "Gayathri", sans-serif;
 `;
 const FooterWrapper = styled.div`
-  background: gray;
+  background: lightgray;
   display: flex;
   //   flex-direction: column;
   align-items: center;
@@ -17,7 +17,7 @@ const FooterWrapper = styled.div`
     text-decoration: none;
   }
 `;
-
+//#00cc66
 const Footer = () => {
   return (
     <ContactMe>
