@@ -19,6 +19,10 @@ import FH from "../assets/img/please.PNG";
 
 const Header = styled.h1`
   margin-top: -45px;
+  font-family: "Gayathri", sans-serif;
+  @media (max-width: 600px) {
+    margin-top: 2%;
+  }
   hr {
     width: 85%;
     border: none;
@@ -186,7 +190,6 @@ const RealProjectCard = () => {
             </Collapse>
           </Card>
         </Grid>
-        
       </Grid>
     </div>
   );
