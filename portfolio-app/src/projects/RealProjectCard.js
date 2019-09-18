@@ -68,7 +68,7 @@ const RealProjectCard = () => {
 
   return (
     <div className={classes.root}>
-      <Header>
+      <Header id="#projects">
         Recent Projects
         <hr />
       </Header>
@@ -186,56 +186,7 @@ const RealProjectCard = () => {
             </Collapse>
           </Card>
         </Grid>
-        <Grid item xs={12} sm={6}>
-          <Card className={classes.card}>
-            <CardHeader title="Tabless Thursdays" />
-            <CardMedia
-              className={classes.media}
-              image={TT}
-              title="Tabless Thursdays"
-            />
-            <CardContent>
-              <Typography variant="body2" color="textSecondary" component="p">
-                Tabless Thursdays is a tab managment web app that I built during
-                Lambda School's front end cirriculum.
-              </Typography>
-            </CardContent>
-            <CardActions>
-              <Tooltip title="View on Github">
-                <IconButton aria-label="view on github">
-                  <i className="fab fa-github" />
-                </IconButton>
-              </Tooltip>
-              <Tooltip title="See deployed site">
-                <IconButton aria-label="view deployed site">
-                  <i className="fas fa-code" />
-                </IconButton>
-              </Tooltip>
-              <Tooltip title="Learn More">
-                <IconButton
-                  className={clsx(classes.expand, {
-                    [classes.expandOpen]: expanded
-                  })}
-                  onClick={handleExpandClick}
-                  aria-expanded={expanded}
-                  aria-label="show more"
-                >
-                  <ExpandMoreIcon />
-                </IconButton>
-              </Tooltip>
-            </CardActions>
-            <Collapse in={expanded} timeout="auto" unmountOnExit>
-              <CardContent>
-                <Typography paragraph>
-                  Tabless thursdays is a tab management web app built in under a
-                  week by a team of 5. I built the front-end with one other
-                  devleoper. Our tech stack included: React, Redux,
-                  React-Router, Node-Sass, and Axios.
-                </Typography>
-              </CardContent>
-            </Collapse>
-          </Card>
-        </Grid>
+        
       </Grid>
     </div>
   );
