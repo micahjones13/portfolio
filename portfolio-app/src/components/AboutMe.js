@@ -4,14 +4,22 @@ import styled from "styled-components";
 const AboutMeContainer = styled.div`
   display: flex;
   justify-content: space-around;
-  max-width: 1800px;
+  //   max-width: 1800px;
   min-height: 300px;
   padding: 5%;
+  @media (max-width: 600px) {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
 `;
 const AboutMeWrapper = styled.div`
   width: 48%;
   font-family: "Gayathri", sans-serif;
   font-size: 1.3rem;
+  @media (max-width: 600px) {
+    width: 90%;
+  }
   h1 {
     text-align: left;
     font-size: 2rem;
@@ -28,9 +36,15 @@ const SkillsWrapper = styled.div`
     color: white;
     display: flex;
     flex-direction: column;
+        @media (max-width: 600px){
+        margin-bottom: 2%;
+        width: 100%;
+        margin-top: 2%;
+    }
     .bottom{
         margin-bottom: 5%;
     }
+
 
 `;
 const Skills = styled.div`
@@ -44,6 +58,9 @@ const Skills = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @media (max-width: 800px){
+        justify-content: center;
+    }
     .hoverSkills{
         display: none;
      
@@ -56,15 +73,26 @@ const Skills = styled.div`
             // background: #07a828;
             width: 100%;
            margin: 0;
+           @media (max-width: 450px){
+               display: none;
+           }
            
         }
     }
     i {
         font-size: 3rem;
+        // @media (max-width: 800px){
+        //     display: none;
+        // }
     }
     h3{
         font-size: 2.5rem;
         margin: 5px;
+        @media(max-width: 600px){
+            font-size: 3rem;
+            margin-left: 3%;
+            margin-top: 5%;
+        }
        
     }
   
