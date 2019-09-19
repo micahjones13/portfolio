@@ -39,16 +39,16 @@ const BannerContainer = styled.div`
     margin: 0;
     // margin-top: 100%;
     @media (max-width: 750px) {
-      margin-top: 66%;
+      margin-top: 50%;
     }
     @media (max-width: 650px) {
       font-size: 3.3rem;
     }
     @media (max-width: 600px) {
-      margin-top: 100%;
+      margin-top: 75%;
     }
     @media (max-width: 400px) {
-      margin-top: 125%;
+      margin-top: 100%;
     }
   }
   // hr {
