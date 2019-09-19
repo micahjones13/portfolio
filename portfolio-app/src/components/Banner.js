@@ -38,11 +38,12 @@ const BannerContainer = styled.div`
     // margin-top: 10%;
     margin: 0;
     // margin-top: 100%;
-    @media (max-width: 750px) {
+    @media (max-width: 1000px) {
       margin-top: 50%;
     }
     @media (max-width: 650px) {
       font-size: 3.3rem;
+      margin-top: 60%;
     }
     @media (max-width: 600px) {
       margin-top: 75%;
