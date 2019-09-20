@@ -2,7 +2,7 @@ import React from "react";
 import MyImg from "../assets/img/anotherpicofme.jpg";
 import styled from "styled-components";
 
-import "./banner.scss";
+// import "./banner.scss";
 
 const Wrapper = styled.div`
   height: 100vh;

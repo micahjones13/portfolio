@@ -18,11 +18,16 @@ import TT from "../assets/img/tabt.PNG";
 import FH from "../assets/img/please.PNG";
 
 const Header = styled.h1`
-  margin-top: -45px;
+  // margin-top: -45px;
+  margin: 0;
   font-family: "Gayathri", sans-serif;
   @media (max-width: 600px) {
     margin-top: 2%;
   }
+  @media (max-width: 400px) {
+    font-size: 2rem;
+  }
+
   hr {
     width: 85%;
     border: none;
@@ -72,11 +77,11 @@ const RealProjectCard = () => {
 
   return (
     <div className={classes.root}>
-      <Header id="#projects">
+      <Header>
         Recent Projects
         <hr />
       </Header>
-      <Grid container spacing={9}>
+      <Grid container spacing={3}>
         <Grid item xs={12} sm={6}>
           <Card className={classes.card}>
             <CardHeader title="Future Hope School" />
