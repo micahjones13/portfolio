@@ -2,7 +2,7 @@ import React from "react";
 import MyImg from "../assets/img/anotherpicofme.jpg";
 import styled from "styled-components";
 
-import "./banner.scss";
+// import "./banner.scss";
 
 const Wrapper = styled.div`
   height: 100vh;
@@ -11,8 +11,11 @@ const Wrapper = styled.div`
   overflow: hidden;
   background-image: url(${MyImg});
   background-size: cover;
-  background-position: center;
+  background-position-y: center;
   box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.4);
+  // @media (max-width: 700px) {
+  //   height: 65vh;
+  // }
 `;
 const BannerContainer = styled.div`
   width: 100vw;
@@ -34,8 +37,19 @@ const BannerContainer = styled.div`
     // top: 10%
     // margin-top: 10%;
     margin: 0;
-    @media (max-width: 500px) {
+    // margin-top: 100%;
+    @media (max-width: 1000px) {
+      margin-top: 50%;
+    }
+    @media (max-width: 650px) {
       font-size: 3.3rem;
+      margin-top: 60%;
+    }
+    @media (max-width: 600px) {
+      margin-top: 75%;
+    }
+    @media (max-width: 400px) {
+      margin-top: 100%;
     }
   }
   // hr {
@@ -57,7 +71,7 @@ const BannerContainer = styled.div`
     color: white;
     text-shadow: 2px 2px black;
     // padding-top: 3%;
-    @media (max-width: 500px) {
+    @media (max-width: 650px) {
       font-size: 2.4rem;
     }
   }

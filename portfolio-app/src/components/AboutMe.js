@@ -27,6 +27,27 @@ const AboutMeWrapper = styled.div`
   }
   p {
     text-align: left;
+    // @media (max-width: 3000px) {
+    //   font-size: 2rem;
+    // }
+    // @media (max-width: 1650px) {
+    //   font-size: 1.7rem;
+    // }
+    // @media (max-width: 1300px) {
+    //   font-size: 1.4rem;
+    // }
+    // @media (max-width: 1000px) {
+    //   font-size: 1.2rem;
+    // }
+    // @media (max-width: 750px) {
+    //   font-size: 1.1rem;
+    // }
+    @media (min-width: 1200px) {
+      font-size: 1.7rem;
+    }
+    @media (min-width: 2000px) {
+      font-size: 2rem;
+    }
   }
 `;
 const SkillsWrapper = styled.div`

@@ -10,9 +10,15 @@ const ProjectWrapper = styled.div`
   // flex-direction: column;
   background-image: url(${BlackSand});
   color: white;
-  // height: 150vh;
+  a {
+    text-decoration: none;
+  }
+
   h1 {
     font-size: 3rem;
+    @media (max-width: 400px) {
+      font-size: 2.5rem;
+    }
   }
   hr {
     width: 85%;
