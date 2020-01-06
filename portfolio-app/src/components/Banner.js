@@ -26,6 +26,18 @@ const BannerContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  .projects-wrapper {
+    border: 2px solid darkgreen;
+    background: rgba(54%, 62%, 52%, 0.8);
+  }
+  a {
+    text-decoration: none;
+    font-size: 2rem;
+    color: black;
+    padding: 2%;
+    // text-shadow: 2px 2px black;
+  }
   h1 {
     z-index: 100;
     // position: absolute;
@@ -143,26 +155,9 @@ const Banner = props => {
       <BannerContainer>
         <h1>Micah Jones</h1>
         <h2>Full-Stack Web Developer</h2>
-        <button
-          onClick={e => {
-            //! Probably need to change this, might not work on diff screens
-            window.scrollTo(
-              window.innerWidth > 900
-                ? {
-                    top: window.innerHeight * 2 + 150,
-                    left: 0,
-                    behavior: "smooth"
-                  }
-                : {
-                    top: window.innerHeight * 3 + 800,
-                    left: 0,
-                    behavior: "smooth"
-                  }
-            );
-          }}
-        >
-          See My Projects
-        </button>
+        <div className="projects-wrapper">
+          <a href="#recent-projects">See My Projects</a>
+        </div>
       </BannerContainer>
       <Socials>
         <a
@@ -195,3 +190,21 @@ export default Banner;
 
 // <BannerPic src = {BannerImg} alt = 'banner img' />
 //<HeadShot src = {MyImg} alt = 'headshot' />
+/*
+     onClick={e => {
+            //! Probably need to change this, might not work on diff screens
+            window.scrollTo(
+              window.innerWidth > 900
+                ? {
+                    top: window.innerHeight * 2 + 150,
+                    left: 0,
+                    behavior: "smooth"
+                  }
+                : {
+                    top: window.innerHeight * 3 + 800,
+                    left: 0,
+                    behavior: "smooth"
+                  }
+            );
+          }}
+*/

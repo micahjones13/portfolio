@@ -35,6 +35,11 @@ const Header = styled.h1`
     background-color: white;
     height: 2px;
   }
+  a {
+    text-decoration: none;
+    color: white;
+    cursor: default;
+  }
 `;
 
 const useStyles = makeStyles(theme => ({
@@ -78,7 +83,7 @@ const RealProjectCard = () => {
   return (
     <div className={classes.root}>
       <Header>
-        Recent Projects
+        <a name="recent-projects">Recent Projects</a>
         <hr />
       </Header>
       <Grid container spacing={3}>
