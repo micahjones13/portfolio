@@ -35,7 +35,7 @@ const BannerContainer = styled.div`
     text-decoration: none;
     font-size: 2rem;
     color: black;
-    padding: 2%;
+    margin: 10px;
     // text-shadow: 2px 2px black;
   }
   h1 {
