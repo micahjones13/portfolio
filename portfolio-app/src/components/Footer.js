@@ -66,6 +66,16 @@ const Footer = () => {
               https://github.com/micahjones13
             </a>
           </li>
+          <li>
+            Resume:{" "}
+            <a
+              href="https://resume.creddle.io/resume/haa3tyrytqy"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              https://resume.creddle.io/resume/haa3tyrytqy
+            </a>
+          </li>
         </ul>
       </FooterWrapper>
     </ContactMe>

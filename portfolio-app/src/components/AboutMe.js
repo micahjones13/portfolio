@@ -79,11 +79,15 @@ const Skills = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    @media (max-width: 800px){
+    @media (max-width: 970px){
         justify-content: center;
     }
     .hoverSkills{
-        display: none;
+       font-size: 1.2rem;
+        @media (max-width: 970px){
+               display: none;
+           }
+        
      
     }
     :hover{
