@@ -4,6 +4,7 @@ import { data } from "../assets/data.js";
 import styled from "styled-components";
 import BlackSand from "../assets/img/blacksand.jpg";
 import RealProjectCard from "./RealProjectCard";
+import Footer from "../components/Footer";
 
 const ProjectWrapper = styled.div`
   // display: flex;
@@ -37,6 +38,8 @@ const ProjectList = () => {
   return (
     <ProjectWrapper>
       <RealProjectCard />
+      <hr></hr>
+      <Footer />
     </ProjectWrapper>
   );
 };

@@ -166,7 +166,7 @@ const AboutMe = props => {
         <Skills>
           <i className="fab fa-css3" />
           <div className="hoverSkills">
-            <p>Practiced in CSS, LESS, and SASS</p>
+            <p>Fluent in CSS, LESS, and SASS</p>
           </div>
           <h3>CSS</h3>
         </Skills>
@@ -177,6 +177,13 @@ const AboutMe = props => {
             <p>Solid JavaScript fundamentals</p>
           </div>
           <h3>JavaScript</h3>
+        </Skills>
+        <Skills>
+          <i className="fab fa-python" />
+          <div className="hoverSkills">
+            <p>Practiced in Python </p>
+          </div>
+          <h3>Python</h3>
         </Skills>
 
         <Skills>

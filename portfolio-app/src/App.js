@@ -15,7 +15,6 @@ function App() {
       <Banner />
       <AboutMe />
       <ProjectList />
-      <Footer />
     </div>
   );
 }

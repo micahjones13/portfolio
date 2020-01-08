@@ -16,6 +16,7 @@ import styled from "styled-components";
 
 import TT from "../assets/img/tabt.PNG";
 import FH from "../assets/img/please.PNG";
+import RM from "../assets/img/randommaze2.PNG";
 
 const Header = styled.h1`
   // margin-top: -45px;
@@ -195,6 +196,62 @@ const RealProjectCard = () => {
                   week by a team of 5. I built the front-end with one other
                   devleoper. Our tech stack included: React, Redux,
                   React-Router, Node-Sass, and Axios.
+                </Typography>
+              </CardContent>
+            </Collapse>
+          </Card>
+        </Grid>
+        {/* //! Maze RUnner */}
+        <Grid item xs={12} sm={6}>
+          <Card className={classes.card}>
+            <CardHeader title="Random Maze Generator" />
+            <CardMedia
+              className={classes.media}
+              image={RM}
+              title="Random Maze Generator"
+            />
+            <CardContent>
+              <Typography variant="body2" color="textSecondary" component="p">
+                This random maze generator is a project I built during Lambda's
+                computer science cirriculum.
+              </Typography>
+            </CardContent>
+            <CardActions>
+              <Tooltip title="View on Github">
+                <a href="https://github.com/cs22-team-9">
+                  <IconButton aria-label="view on github">
+                    <i className="fab fa-github" />
+                  </IconButton>
+                </a>
+              </Tooltip>
+              <Tooltip title="See deployed site">
+                <a href="https://cs22group9.netlify.com/">
+                  <IconButton aria-label="view deployed site">
+                    <i className="fas fa-code" />
+                  </IconButton>
+                </a>
+              </Tooltip>
+              <Tooltip title="Learn More">
+                <IconButton
+                  className={clsx(classes.expand, {
+                    [classes.expandOpen]: anotherexpanded
+                  })}
+                  onClick={handleAnotherExpandClick}
+                  aria-expanded={anotherexpanded}
+                  aria-label="show more"
+                >
+                  <ExpandMoreIcon />
+                </IconButton>
+              </Tooltip>
+            </CardActions>
+            <Collapse in={anotherexpanded} timeout="auto" unmountOnExit>
+              <CardContent>
+                <Typography paragraph>
+                  This random maze generator was built by a team of 4 in under a
+                  week. I was in charge of getting the back end up and running
+                  using Django and Python. I also helped the front end using
+                  React/Redux to display the map, and JavaScript to move the
+                  character sprite.
                 </Typography>
               </CardContent>
             </Collapse>
