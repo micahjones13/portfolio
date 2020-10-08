@@ -93,6 +93,7 @@ const RealProjectCard = () => {
   return (
     <div className={classes.root}>
       <Header>
+        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
         <a name="recent-projects">Recent Projects</a>
         <hr />
       </Header>
