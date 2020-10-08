@@ -125,15 +125,15 @@ const Skills = styled.div`
    
 `;
 
-const AboutMe = props => {
+const AboutMe = (props) => {
   return (
     <AboutMeContainer>
       <AboutMeWrapper>
         <h1>Hey, there!</h1>
         <p>
           My name is Micah Jones, and I'm a full-stack web developer living in
-          the Provo, Utah area. I love coding and creating, and am excited for
-          any opportunities in the tech field.
+          the Vineyard, Utah area. I love coding and creating, and am excited
+          for any opportunities in the tech field.
         </p>
         <p>
           I've worked mostly in the caregiving industry supporting individuals
@@ -147,9 +147,9 @@ const AboutMe = props => {
         <p>
           That school came in the form of Lambda School, a 9+ month, fully
           immersive full stack bootcamp. I began Lambda in April of 2019, and
-          can proudly say I am on track to graduate in Janurary of 2020. I'm
-          thrilled to begin my career in web development, and would love to hear
-          from you! Let's find out what my skills can do for your company.
+          can proudly say I graduated in January of 2020. I'm thrilled to begin
+          my career in web development, and would love to hear from you! Let's
+          find out what my skills can do for your company.
         </p>
       </AboutMeWrapper>
       <SkillsWrapper>
@@ -200,6 +200,14 @@ const AboutMe = props => {
             <p>Experience with Node.js/Express backends</p>
           </div>
           <h3>Node.js</h3>
+        </Skills>
+
+        <Skills>
+          <i className="fas fa-laptop-code" />
+          <div className="hoverSkills">
+            <p>Currently learning and building with C#</p>
+          </div>
+          <h3>C#</h3>
         </Skills>
 
         <div className="bottom">

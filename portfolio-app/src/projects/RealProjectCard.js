@@ -17,6 +17,7 @@ import styled from "styled-components";
 import TT from "../assets/img/tabt.PNG";
 import FH from "../assets/img/please.PNG";
 import RM from "../assets/img/randommaze2.PNG";
+import PP from "../assets/img/pokerprogram.PNG";
 
 const Header = styled.h1`
   // margin-top: -45px;
@@ -43,44 +44,52 @@ const Header = styled.h1`
   }
 `;
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
     padding: "5%",
-    justifyContent: "center"
+    justifyContent: "center",
   },
   card: {
-    padding: "5%"
+    padding: "5%",
   },
   media: {
     height: 0,
-    paddingTop: "56.25%" // 16:9
+    paddingTop: "56.25%", // 16:9
   },
   expand: {
     transform: "rotate(0deg)",
     marginLeft: "auto",
     transition: theme.transitions.create("transform", {
-      duration: theme.transitions.duration.shortest
-    })
+      duration: theme.transitions.duration.shortest,
+    }),
   },
   expandOpen: {
-    transform: "rotate(180deg)"
-  }
+    transform: "rotate(180deg)",
+  },
 }));
 
 const RealProjectCard = () => {
   const classes = useStyles();
   const [expanded, setExpanded] = useState(false);
   const [anotherexpanded, setAnotherExpanded] = useState(false);
+  const [anotherexpanded1, setAnotherExpanded1] = useState(false);
+  const [anotherexpanded2, setAnotherExpanded2] = useState(false);
+
   //currently have to have different methods for each expansion button or else they all open when you click one, find better way
 
-  const handleExpandClick = e => {
+  const handleExpandClick = (e) => {
     setExpanded(!expanded);
   };
-  const handleAnotherExpandClick = e => {
+  const handleAnotherExpandClick = (e) => {
     setAnotherExpanded(!anotherexpanded);
   };
-
+  const handleAnotherExpandClick1 = (e) => {
+    setAnotherExpanded1(!anotherexpanded1);
+  };
+  const handleAnotherExpandClick2 = (e) => {
+    setAnotherExpanded2(!anotherexpanded2);
+  };
   return (
     <div className={classes.root}>
       <Header>
@@ -99,8 +108,7 @@ const RealProjectCard = () => {
             <CardContent>
               <Typography variant="body2" color="textSecondary" component="p">
                 Future Hope was the capstone project for Lambda School that I
-                helped build. It's purpose is to connect mentors in the US with
-                classrooms all over the world.
+                helped build with a team of 6 in 8-weeks.
               </Typography>
             </CardContent>
             <CardActions>
@@ -121,7 +129,7 @@ const RealProjectCard = () => {
               <Tooltip title="Learn More">
                 <IconButton
                   className={clsx(classes.expand, {
-                    [classes.expandOpen]: expanded
+                    [classes.expandOpen]: expanded,
                   })}
                   onClick={handleExpandClick}
                   aria-expanded={expanded}
@@ -179,7 +187,7 @@ const RealProjectCard = () => {
               <Tooltip title="Learn More">
                 <IconButton
                   className={clsx(classes.expand, {
-                    [classes.expandOpen]: anotherexpanded
+                    [classes.expandOpen]: anotherexpanded,
                   })}
                   onClick={handleAnotherExpandClick}
                   aria-expanded={anotherexpanded}
@@ -196,6 +204,57 @@ const RealProjectCard = () => {
                   week by a team of 5. I built the front-end with one other
                   devleoper. Our tech stack included: React, Redux,
                   React-Router, Node-Sass, and Axios.
+                </Typography>
+              </CardContent>
+            </Collapse>
+          </Card>
+        </Grid>
+        {/* //! C# CARD GAMES */}
+        <Grid item xs={12} sm={6}>
+          <Card className={classes.card}>
+            <CardHeader title="C# Card Games" />
+            <CardMedia
+              className={classes.media}
+              image={PP}
+              title="C# Card Games"
+            />
+            <CardContent>
+              <Typography variant="body2" color="textSecondary" component="p">
+                These are card games I built while learning C# from Kevin
+                MacMaster, a developer at Arbiter Sports.
+              </Typography>
+            </CardContent>
+            <CardActions>
+              <Tooltip title="View on Github">
+                <a href="https://github.com/micahjones13/Poker">
+                  <IconButton aria-label="view on github">
+                    <i className="fab fa-github" />
+                  </IconButton>
+                </a>
+              </Tooltip>
+
+              <Tooltip title="Learn More">
+                <IconButton
+                  className={clsx(classes.expand, {
+                    [classes.expandOpen]: anotherexpanded1,
+                  })}
+                  onClick={handleAnotherExpandClick1}
+                  aria-expanded={anotherexpanded1}
+                  aria-label="show more"
+                >
+                  <ExpandMoreIcon />
+                </IconButton>
+              </Tooltip>
+            </CardActions>
+            <Collapse in={anotherexpanded1} timeout="auto" unmountOnExit>
+              <CardContent>
+                <Typography paragraph>
+                  While learning C# from Kevin MacMaster, a developer at Arbiter
+                  Sports, we built two card games: poker and blackjack. This was
+                  accomplished using LINQ, extenstions, and OOP methodology.
+                  This was such a great learning experience for me, and Kevin
+                  was a great teacher. C# has quickly become a language that I
+                  enjoy programming in.
                 </Typography>
               </CardContent>
             </Collapse>
@@ -234,17 +293,17 @@ const RealProjectCard = () => {
               <Tooltip title="Learn More">
                 <IconButton
                   className={clsx(classes.expand, {
-                    [classes.expandOpen]: anotherexpanded
+                    [classes.expandOpen]: anotherexpanded2,
                   })}
-                  onClick={handleAnotherExpandClick}
-                  aria-expanded={anotherexpanded}
+                  onClick={handleAnotherExpandClick2}
+                  aria-expanded={anotherexpanded2}
                   aria-label="show more"
                 >
                   <ExpandMoreIcon />
                 </IconButton>
               </Tooltip>
             </CardActions>
-            <Collapse in={anotherexpanded} timeout="auto" unmountOnExit>
+            <Collapse in={anotherexpanded2} timeout="auto" unmountOnExit>
               <CardContent>
                 <Typography paragraph>
                   This random maze generator was built by a team of 4 in under a
