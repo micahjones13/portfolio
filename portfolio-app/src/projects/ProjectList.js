@@ -1,6 +1,6 @@
-import React, { Component } from "react";
-import ProjectCard from "./ProjectCard";
-import { data } from "../assets/data.js";
+import React from "react";
+// import ProjectCard from "./ProjectCard";
+// import { data } from "../assets/data.js";
 import styled from "styled-components";
 import BlackSand from "../assets/img/blacksand.jpg";
 import RealProjectCard from "./RealProjectCard";

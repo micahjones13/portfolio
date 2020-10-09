@@ -7,7 +7,7 @@ import Banner from "./components/Banner.js";
 import AboutMe from "./components/AboutMe.js";
 
 import ProjectList from "./projects/ProjectList";
-import Footer from "./components/Footer";
+// import Footer from "./components/Footer";
 
 function App() {
   return (
