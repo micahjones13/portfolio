@@ -1,5 +1,5 @@
 import React from "react";
-import MyImg from "../assets/img/anotherpicofme.jpg";
+import MyImg from "../assets/img/JPEG/bannerpic.jpg";
 import styled from "styled-components";
 
 // import "./banner.scss";
@@ -149,7 +149,7 @@ const Socials = styled.div`
 //   border-radius: 40%;
 // `;
 
-const Banner = props => {
+const Banner = (props) => {
   return (
     <Wrapper>
       <BannerContainer>
@@ -176,7 +176,7 @@ const Banner = props => {
         </a>
 
         <i
-          onClick={e => {
+          onClick={(e) => {
             window.location.href = "mailto:micahjones13@gmail.com";
           }}
           className="fas fa-envelope-open"
