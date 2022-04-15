@@ -1,21 +1,29 @@
 import React from "react";
-// import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
-//local
 import "./App.css";
 import Banner from "./components/Banner.js";
 import AboutMe from "./components/AboutMe.js";
 
 import ProjectList from "./projects/ProjectList";
-// import Footer from "./components/Footer";
+import Articles from "./components/articles/Articles";
 
 function App() {
   return (
-    <div className="App">
-      <Banner />
-      <AboutMe />
-      <ProjectList />
-    </div>
+    <Router>
+      <div className="App">
+        <Switch>
+          <Route exact path="/">
+            <Banner />
+            <AboutMe />
+            <ProjectList />
+          </Route>
+          <Route path="/articles">
+            <Articles />
+          </Route>
+        </Switch>
+      </div>
+    </Router>
   );
 }
 
