@@ -5,7 +5,7 @@ const ArticleHeader = (props) => {
     <div>
       <header>
         <span>{props.date}</span>
-        <h1>{props.title}</h1>
+        <h1 style={{ fontSize: "3rem" }}>{props.title}</h1>
       </header>
     </div>
   );

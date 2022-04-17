@@ -1,12 +1,13 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import "./App.css";
 import Banner from "./components/Banner.js";
 import AboutMe from "./components/AboutMe.js";
-
+import Nav from "./components/Nav.js";
 import ProjectList from "./projects/ProjectList";
 import Articles from "./components/articles/Articles";
+import SliderArticle from "./Articles/SliderArticle";
 
 function App() {
   return (
@@ -18,8 +19,13 @@ function App() {
             <AboutMe />
             <ProjectList />
           </Route>
-          <Route path="/articles">
+          <Route exact path="/articles">
+            <Nav />
             <Articles />
+          </Route>
+          <Route path="/articles/styling-range-input">
+            <Nav />
+            <SliderArticle />
           </Route>
         </Switch>
       </div>

@@ -2,19 +2,18 @@ import React from "react";
 import MyImg from "../assets/img/JPEG/bannerpic.jpg";
 import styled from "styled-components";
 
-// import "./banner.scss";
-
 const Wrapper = styled.div`
   height: 100vh;
+  width: 99vw;
   position: relative;
   overflow: hidden;
   background-image: url(${MyImg});
   background-size: cover;
   background-position-y: center;
-  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.4);
 `;
 const BannerContainer = styled.div`
-  width: 100vw;
+  width: 100%;
   background: rgba(37%, 45%, 52%, 0.5);
   overflow: hidden;
   height: 100vh;
@@ -34,20 +33,7 @@ const BannerContainer = styled.div`
     padding: 1%;
     border-radius: 10px;
   }
-  a {
-    text-decoration: none;
-    font-size: 2rem;
-    color: white;
-  }
-  a:hover {
-    color: lightgreen;
-  }
-  a:visited {
-    color: darkblue;
-  }
-  a:visited:hover {
-    color: lightgreen;
-  }
+
   h1 {
     z-index: 100;
     font-family: "Gayathri", sans-serif;

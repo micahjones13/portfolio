@@ -40,7 +40,7 @@ const ArticlePreviewCard = styled.div`
 `;
 
 const ArticlePreview = (props) => {
-  const handleClick = (e) => {};
+  // const handleClick = (e) => {};
   return (
     <ArticlePreviewWrapper>
       {props.data.map((art) => {
@@ -48,9 +48,10 @@ const ArticlePreview = (props) => {
           <ArticlePreviewCard key={art.id}>
             <span className="date">{art.date}</span>
             <h2>
-              <a href="#">{art.title}</a>
+              <a href={art.url}>{art.title}</a>
             </h2>
             <p>{art.content}</p>
+            <a href={art.url}>Read More</a>
           </ArticlePreviewCard>
         );
       })}

@@ -30,7 +30,6 @@ const ProjectList = () => {
     <ProjectWrapper>
       <ProjectCard />
       <hr></hr>
-      <Footer />
     </ProjectWrapper>
   );
 };

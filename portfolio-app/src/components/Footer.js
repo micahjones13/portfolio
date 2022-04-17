@@ -3,47 +3,24 @@ import styled from "styled-components";
 import BlackSand from "../assets/img/blacksand.jpg";
 
 const ContactMe = styled.div`
-  // background: rgb(51, 51, 51) none repeat scroll 0% 0%;
-  // background-image: url(${BlackSand});
   color: white;
-  a {
-    color: white;
-    :visited {
-      color: lightgreen;
-    }
-    :active {
-      color: blue;
-    }
-  }
   display: flex;
   justify-content: center;
   font-family: "Gayathri", sans-serif;
+  padding-top: 1%;
   h2 {
     margin-bottom: 0;
   }
   a {
     margin-left: 5%;
     margin-right: 5%;
-    @media(max-width: 500px){
-     display: none;
+    @media (max-width: 500px) {
+      display: none;
     }
   }
- 
 `;
 const FooterWrapper = styled.div`
-  // background: rgb(51, 51, 51) none repeat scroll 0% 0%;
-  // display: flex;
-  // flex-direction: column;
-  // align-items: center;
-  // justify-content: space-around;
   width: 70%;
-  // ul {
-  //   list-style-type: none;
-  //   text-align: left;
-  //   li {
-  //     margin-top: 2%;
-  //   }
-  // }
 `;
 
 const Footer = () => {

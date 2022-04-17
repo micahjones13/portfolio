@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  width: 100%;
 }
 
 .App-logo {
@@ -7,7 +8,21 @@
   height: 40vmin;
   pointer-events: none;
 }
-
+a {
+  text-decoration: none;
+  font-size: 2rem;
+  color: white;
+}
+a:hover {
+  color: lightgreen;
+  text-decoration: underline;
+}
+a:visited {
+  color: white;
+}
+a:visited:hover {
+  color: lightgreen;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
