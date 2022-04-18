@@ -56,7 +56,7 @@ const NavItems = styled.div`
   @media (min-width: 601px) {
     width: 60%;
   }
-  @media (min-width: 900px) {
+  @media (min-width: 1700px) {
     width: 20%;
   }
 `;

@@ -4,8 +4,8 @@ import ArticleHeader from "../components/articles/ArticleHeader";
 import sliderImg from "../assets/img/slider.png";
 
 const Wrapper = styled.article`
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 20%;
+  margin-right: 20%;
   padding: 5%;
   text-align: left;
   h1 {
@@ -51,12 +51,14 @@ const Wrapper = styled.article`
   a:hover {
     color: lightgreen;
   }
+  @media (max-width: 1400px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
   @media (max-width: 1200px) {
     pre {
       white-space: pre-wrap;
     }
-    margin-left: auto;
-    margin-right: auto;
   }
   @media (max-width: 900px) {
     h1 {
