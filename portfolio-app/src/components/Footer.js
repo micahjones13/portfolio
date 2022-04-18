@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import BlackSand from "../assets/img/blacksand.jpg";
 
 const ContactMe = styled.div`
   color: white;

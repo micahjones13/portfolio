@@ -4,16 +4,12 @@ import styled from "styled-components";
 import Grid from "@material-ui/core/Grid";
 import CustomCard from "./Card.js";
 
-import TT from "../assets/img/tabt.PNG";
-import FH from "../assets/img/please.PNG";
-import RM from "../assets/img/randommaze2.PNG";
-import PP from "../assets/img/pokerprogram.PNG";
-
 const Header = styled.h1`
   margin: 0;
   padding-bottom: 1%;
   color: black;
   font-family: "Gayathri", sans-serif;
+
   @media (max-width: 600px) {
     margin-top: 2%;
   }

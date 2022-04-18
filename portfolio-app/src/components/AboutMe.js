@@ -73,6 +73,12 @@ const Skills = styled.div`
         
      
     }
+    i {
+      @media (max-width: 970px){
+        display: none;
+      }
+
+    }
     :hover{
         transform: scale(1.1);
         .hoverSkills{

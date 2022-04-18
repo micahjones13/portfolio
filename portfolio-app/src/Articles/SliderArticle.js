@@ -27,6 +27,7 @@ const Wrapper = styled.article`
   p {
     font-size: 1.3rem;
     text-align: left;
+    line-height: 2rem;
   }
   main {
     display: flex;
@@ -51,14 +52,22 @@ const Wrapper = styled.article`
   a:hover {
     color: lightgreen;
   }
+  @media (max-width: 400px) {
+    pre {
+      white-space: pre-wrap;
+    }
+    img {
+      width: 130%;
+    }
+  }
 `;
 
 const SliderArticle = () => {
   return (
     <Wrapper>
       <ArticleHeader
-        date="15 April 2022"
-        title="Designing an input range at two differnet heights"
+        date="18 April 2022"
+        title="Styling an input range to have different track heights before and after the thumb"
       />
       <main>
         <img src={sliderImg} alt="Fully styled slider" />
@@ -67,7 +76,10 @@ const SliderArticle = () => {
         </span>
         <p className="preamble">
           Styling native HTML elements can be tricky, and the range input is
-          certainly no different. I was tasked with updating our slider
+          certainly no different. I was tasked with updating our{" "}
+          <a href="https://github.com/RocketCommunicationsInc/astro/tree/main/packages/web-components/src/components/rux-slider">
+            slider
+          </a>{" "}
           component, which uses the classic{" "}
           <code>&#60;input type="range"&#62;</code>
         </p>
@@ -81,11 +93,13 @@ const SliderArticle = () => {
           track different on each side of the thumb, like my design called for.
         </p>
         <p>
-          My first thought was, “I'll just ::before or ::after the thumb, and
-          change the track height that way. Unfortunately, the ::before and
-          ::after pseudo-elements don't work with the pseudo-classes for the
-          track and thumb. Well, what now? I can change the height of the track,
-          but that sets the height for the entire track, which we don’t want.
+          My first thought was, “I'll just <code>::before</code> or{" "}
+          <code>::after</code> the thumb, and change the track height that way.
+          Unfortunately, the <code>::before</code> and
+          <code>::after</code> pseudo-elements don't work with the
+          pseudo-classes for the track and thumb. Well, what now? I can change
+          the height of the track, but that sets the height for the entire
+          track, which we don’t want.
         </p>
         <h2>The Solution</h2>
         <p>

@@ -1,11 +1,11 @@
 import React from "react";
 import styled from "styled-components";
 import ProjectCard from "./ProjectCard";
-import Footer from "../components/Footer";
 
 const ProjectWrapper = styled.div`
   background: linear-gradient(to bottom, white, gray, black);
   color: white;
+
   a {
     text-decoration: none;
   }

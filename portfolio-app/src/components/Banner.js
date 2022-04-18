@@ -32,6 +32,12 @@ const BannerContainer = styled.div`
     background: rgba(54%, 62%, 52%, 0.8);
     padding: 1%;
     border-radius: 10px;
+    @media (max-width: 1260px) {
+      width: 80%;
+    }
+    @media (max-width: 600px) {
+      width: 100%;
+    }
   }
 
   h1 {
@@ -133,13 +139,6 @@ const Banner = (props) => {
         >
           <i className="fab fa-linkedin" />
         </a>
-
-        <i
-          onClick={(e) => {
-            window.location.href = "mailto:micahjones13@gmail.com";
-          }}
-          className="fas fa-envelope-open"
-        />
       </Socials>
     </Wrapper>
   );

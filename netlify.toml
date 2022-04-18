@@ -4,4 +4,4 @@ ID = '4d98a7fe-ebf2-4321-98cd-581f4ff6868c'
 [build]
   base = 'portfolio-app/'
   publish = 'portfolio-app/build'
-  command = 'yarn build'
+  command = 'npm run build'

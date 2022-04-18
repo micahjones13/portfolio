@@ -1,26 +1,34 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import MyFace from "../assets/img/github-avatar.jpeg";
+
 const NavWrapper = styled.div`
   background: darkgreen;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 10vh;
+  height: 5rem;
   width: 100%;
+  position: sticky;
+  top: 0;
+  border-bottom: 3px solid lightgreen;
   h1 {
     color: white;
     padding-left: 2%;
+  }
+  @media (max-width: 600px) {
+    h1 {
+      display: none;
+    }
   }
 `;
 const NavItems = styled.div`
   color: white;
   text-decoration: none;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
-  width: 50%;
+  width: 20%;
   li {
     color: white;
     list-style: none;
@@ -41,12 +49,20 @@ const NavItems = styled.div`
       color: lightgreen;
     }
   }
+  @media (max-width: 600px) {
+    width: 100%;
+    justify-content: space-evenly;
+  }
+  @media (min-width: 601px) {
+    width: 60%;
+  }
+  @media (min-width: 900px) {
+    width: 40%;
+  }
 `;
 const Socials = styled.div`
-  width: 200px;
   display: flex;
   justify-content: flex-end;
-  font-size: 30px;
   color: white;
   z-index: 3;
   a {

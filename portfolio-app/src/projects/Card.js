@@ -12,14 +12,15 @@ import IconButton from "@material-ui/core/IconButton";
 import Typography from "@material-ui/core/Typography";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import Tooltip from "@material-ui/core/Tooltip";
-import styled from "styled-components";
-import { green } from "@material-ui/core/colors";
 
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
     padding: "5%",
-    justifyContent: "center",
+    justifyContent: "space-evenly",
+    display: "flex",
+    alignItems: "center",
+    flexWrap: "wrap",
   },
   cardHeader: {
     fontWeight: "bold",
@@ -27,6 +28,7 @@ const useStyles = makeStyles((theme) => ({
   },
   card: {
     padding: "5%",
+    marginBottom: "2%",
   },
   media: {
     height: 0,
@@ -56,18 +58,15 @@ const useStyles = makeStyles((theme) => ({
 const CustomCard = (props) => {
   const classes = useStyles();
   const [expanded, setExpanded] = useState(false);
-
-  const handleExpandClick = (e) => {
-    setExpanded(!expanded);
-  };
+  const [expanded1, setExpanded1] = useState(false);
 
   return (
     <div className={classes.root}>
       {props.cards.map((card) => {
         return (
-          <Grid item xs={12} sm={6}>
+          <Grid item xs={10} sm={5} key={card.id}>
             <Card className={classes.card}>
-              <CardHeader title={card.title} />
+              <CardHeader title={card.title} style={{ color: "darkgreen" }} />
               <CardMedia
                 className={classes.media}
                 image={card.image}
@@ -110,10 +109,25 @@ const CustomCard = (props) => {
                   classes={{ tooltip: classes.customTooltip }}
                 >
                   <IconButton
-                    className={clsx(classes.expand, {
-                      [classes.expandOpen]: expanded,
-                    })}
-                    onClick={handleExpandClick}
+                    className={
+                      card.id === 1
+                        ? clsx(classes.expand, {
+                            [classes.expandOpen]: expanded,
+                          })
+                        : clsx(classes.expand, {
+                            [classes.expandOpen]: expanded1,
+                          })
+                    }
+                    id={card.id}
+                    onClick={() => {
+                      if (card.id === 1) {
+                        console.log("id is 1");
+                        setExpanded(!expanded);
+                      } else if (card.id === 2) {
+                        console.log("id is 2");
+                        setExpanded1(!expanded1);
+                      }
+                    }}
                     aria-expanded={expanded}
                     aria-label="show more"
                   >
@@ -121,7 +135,11 @@ const CustomCard = (props) => {
                   </IconButton>
                 </Tooltip>
               </CardActions>
-              <Collapse in={expanded} timeout="auto" unmountOnExit>
+              <Collapse
+                in={card.id === 1 ? expanded : expanded1}
+                timeout="auto"
+                unmountOnExit
+              >
                 <CardContent>
                   <Typography paragraph>{card.content}</Typography>
                 </CardContent>
