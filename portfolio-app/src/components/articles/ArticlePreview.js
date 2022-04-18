@@ -38,6 +38,13 @@ const ArticlePreviewCard = styled.div`
     color: darkgreen;
     background: darkgreen;
   }
+  @media (max-width: 600px) {
+    border-top: 1px solid darkgreen;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid darkgreen;
+    border-radius: 0;
+  }
 `;
 
 const ArticlePreview = (props) => {

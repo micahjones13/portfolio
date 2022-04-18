@@ -49,7 +49,7 @@ const BannerContainer = styled.div`
     text-shadow: 3px 2px black;
     margin: 0;
     @media (max-width: 1000px) {
-      margin-top: 50%;
+      margin-top: 20%;
     }
     @media (max-width: 650px) {
       font-size: 3.3rem;

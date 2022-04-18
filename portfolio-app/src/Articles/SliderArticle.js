@@ -4,8 +4,8 @@ import ArticleHeader from "../components/articles/ArticleHeader";
 import sliderImg from "../assets/img/slider.png";
 
 const Wrapper = styled.article`
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: auto;
+  margin-right: auto;
   padding: 5%;
   text-align: left;
   h1 {
@@ -51,12 +51,21 @@ const Wrapper = styled.article`
   a:hover {
     color: lightgreen;
   }
-  @media (max-width: 400px) {
+  @media (max-width: 1200px) {
     pre {
       white-space: pre-wrap;
     }
+  }
+  @media (max-width: 900px) {
+    h1 {
+      font-size: 2rem;
+    }
     img {
-      width: 130%;
+      width: 100%;
+    }
+    code {
+      white-space: pre-wrap;
+      font-size: 1rem;
     }
   }
 `;

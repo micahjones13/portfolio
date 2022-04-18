@@ -65,6 +65,7 @@ const Skills = styled.div`
     @media (max-width: 970px){
         justify-content: center;
     }
+
     .hoverSkills{
        font-size: 1.2rem;
         @media (max-width: 970px){
@@ -99,9 +100,7 @@ const Skills = styled.div`
         font-size: 2.5rem;
         margin: 5px;
         @media(max-width: 600px){
-            font-size: 3rem;
-            margin-left: 3%;
-            margin-top: 5%;
+            font-size: 2rem;
         }
     }
 `;
