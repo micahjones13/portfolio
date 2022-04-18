@@ -7,7 +7,7 @@ export const data = [
     image: astroSb,
     description:
       "Web components and patterns built for the Astro Space UX Design System (Astro UXDS)",
-    gitLink: "www.github.comhttps://github.com/RocketCommunicationsInc/astro",
+    gitLink: "https://github.com/RocketCommunicationsInc/astro",
     deployedLink:
       "https://astro-components.netlify.app/?path=/story/astro-uxds-welcome-start-here--page",
     content:
