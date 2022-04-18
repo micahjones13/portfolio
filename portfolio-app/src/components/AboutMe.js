@@ -110,7 +110,7 @@ const AboutMe = () => {
   return (
     <AboutMeContainer>
       <AboutMeWrapper>
-        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+        {/* eslint-disable-next-line */}
         <a name="about" id="about"></a>
         <h1>Hey, there!</h1>
         <p>

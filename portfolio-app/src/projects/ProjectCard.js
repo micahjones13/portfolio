@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { data } from "../assets/data";
 import styled from "styled-components";
 import Grid from "@material-ui/core/Grid";
@@ -38,6 +38,7 @@ const ProjectCard = () => {
   return (
     <div className="project-card">
       <Header>
+        {/* eslint-disable-next-line */}
         <a name="recent-projects" id="recent-projects">
           Recent Projects
         </a>

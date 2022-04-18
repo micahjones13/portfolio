@@ -1,4 +1,3 @@
-//prettier-ignore
 import React from "react";
 import styled from "styled-components";
 import ArticleHeader from "../components/articles/ArticleHeader";
@@ -142,6 +141,7 @@ const SliderArticle = () => {
             <br />
             {"    "}background-position: left;
             <br />
+            {/* eslint-disable-next-line */}
             {"    "}/* background-size: ???? */ <br />
             &#125;
           </code>
@@ -195,6 +195,7 @@ const SliderArticle = () => {
             {"    "}background-repeat: no-repeat no-repeat; background-position:
             left;
             <br />
+            {/* eslint-disable-next-line */}
             {"    "}/* background-size: ???? */
             <br />
             &#125;
@@ -218,6 +219,7 @@ const SliderArticle = () => {
             <br />
             function updateValue()&#123;
             <br />
+            {/* eslint-disable-next-line */}
             {"    "}const val = slider.value; const valPercent =
             `$&#123;val&#125;%`;
             <br />
