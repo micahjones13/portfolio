@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 const ArticlePreviewWrapper = styled.div`
   font-weight: bold;
@@ -48,10 +49,10 @@ const ArticlePreview = (props) => {
           <ArticlePreviewCard key={art.id}>
             <span className="date">{art.date}</span>
             <h2>
-              <a href={art.url}>{art.title}</a>
+              <Link to={art.url}>{art.title}</Link>
             </h2>
             <p>{art.content}</p>
-            <a href={art.url}>Read More</a>
+            <Link to={art.url}>Read More</Link>
           </ArticlePreviewCard>
         );
       })}
