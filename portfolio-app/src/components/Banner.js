@@ -1,6 +1,7 @@
 import React from "react";
 import MyImg from "../assets/img/JPEG/bannerpic.jpg";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 const Wrapper = styled.div`
   height: 100vh;
@@ -112,7 +113,7 @@ const Socials = styled.div`
   }
 `;
 
-const Banner = (props) => {
+const Banner = () => {
   return (
     <Wrapper>
       <BannerContainer>
@@ -121,7 +122,7 @@ const Banner = (props) => {
         <div className="projects-wrapper">
           <a href="#about">About</a>
           <a href="#recent-projects">Projects</a>
-          <a href="/articles">Articles</a>
+          <Link to="/articles">Articles</Link>
         </div>
       </BannerContainer>
       <Socials>
