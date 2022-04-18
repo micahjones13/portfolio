@@ -1,16 +1,11 @@
 import React from "react";
-// import ProjectCard from "./ProjectCard";
-// import { data } from "../assets/data.js";
 import styled from "styled-components";
-import BlackSand from "../assets/img/blacksand.jpg";
-import RealProjectCard from "./RealProjectCard";
-import Footer from "../components/Footer";
+import ProjectCard from "./ProjectCard";
 
 const ProjectWrapper = styled.div`
-  // display: flex;
-  // flex-direction: column;
-  background-image: url(${BlackSand});
+  background: linear-gradient(to bottom, white, gray, black);
   color: white;
+
   a {
     text-decoration: none;
   }
@@ -31,26 +26,12 @@ const ProjectWrapper = styled.div`
 `;
 
 const ProjectList = () => {
-  // state = {
-  //   projects: data
-  // };
-
   return (
     <ProjectWrapper>
-      <RealProjectCard />
+      <ProjectCard />
       <hr></hr>
-      <Footer />
     </ProjectWrapper>
   );
 };
 
 export default ProjectList;
-
-/*
-
-        <h1>My Projects</h1>
-        <hr />
-        {this.state.projects.map(project => {
-          return <ProjectCard project={project} key={project.id} />;
-        })}
-*/

@@ -3,8 +3,9 @@ import styled from "styled-components";
 
 const AboutMeContainer = styled.div`
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: space-around;
-  //   max-width: 1800px;
   min-height: 300px;
   padding: 5%;
   @media (max-width: 600px) {
@@ -17,31 +18,15 @@ const AboutMeWrapper = styled.div`
   width: 48%;
   font-family: "Gayathri", sans-serif;
   font-size: 1.3rem;
+  padding-bottom: 2%;
   @media (max-width: 600px) {
     width: 90%;
   }
   h1 {
-    text-align: left;
     font-size: 2rem;
     color: forestgreen;
   }
   p {
-    text-align: left;
-    // @media (max-width: 3000px) {
-    //   font-size: 2rem;
-    // }
-    // @media (max-width: 1650px) {
-    //   font-size: 1.7rem;
-    // }
-    // @media (max-width: 1300px) {
-    //   font-size: 1.4rem;
-    // }
-    // @media (max-width: 1000px) {
-    //   font-size: 1.2rem;
-    // }
-    // @media (max-width: 750px) {
-    //   font-size: 1.1rem;
-    // }
     @media (min-width: 1200px) {
       font-size: 1.7rem;
     }
@@ -51,11 +36,11 @@ const AboutMeWrapper = styled.div`
   }
 `;
 const SkillsWrapper = styled.div`
-    width: 48%
-    font-family: 'Gayathri', sans-serif;
+    width: 100%
     background: grey;
     color: white;
     display: flex;
+    font-weight: bold;
     flex-direction: column;
         @media (max-width: 600px){
         margin-bottom: 2%;
@@ -65,15 +50,13 @@ const SkillsWrapper = styled.div`
     .bottom{
         margin-bottom: 5%;
     }
-
-
 `;
 const Skills = styled.div`
     background: darkgreen;
-    height: 10vh;
+    height: 5vh;
     text-align: center;
     padding: 1%;
-    margin-top: 2%;
+    margin-top: 1%;
     margin-left: 5%;
     margin-right: 5%
     display: flex;
@@ -82,6 +65,7 @@ const Skills = styled.div`
     @media (max-width: 970px){
         justify-content: center;
     }
+
     .hoverSkills{
        font-size: 1.2rem;
         @media (max-width: 970px){
@@ -90,12 +74,17 @@ const Skills = styled.div`
         
      
     }
+    i {
+      @media (max-width: 970px){
+        display: none;
+      }
+
+    }
     :hover{
         transform: scale(1.1);
         .hoverSkills{
             color: white;
             display: block;
-            // background: #07a828;
             width: 100%;
            margin: 0;
            @media (max-width: 450px){
@@ -106,50 +95,27 @@ const Skills = styled.div`
     }
     i {
         font-size: 3rem;
-        // @media (max-width: 800px){
-        //     display: none;
-        // }
     }
     h3{
         font-size: 2.5rem;
         margin: 5px;
         @media(max-width: 600px){
-            font-size: 3rem;
-            margin-left: 3%;
-            margin-top: 5%;
+            font-size: 2rem;
         }
-       
     }
-  
-   
-   
 `;
 
-const AboutMe = (props) => {
+const AboutMe = () => {
   return (
     <AboutMeContainer>
       <AboutMeWrapper>
+        {/* eslint-disable-next-line */}
+        <a name="about" id="about"></a>
         <h1>Hey, there!</h1>
         <p>
           My name is Micah Jones, and I'm a full-stack web developer living in
-          the Vineyard, Utah area. I love coding and creating, and am excited
-          for any opportunities in the tech field.
-        </p>
-        <p>
-          I've worked mostly in the caregiving industry supporting individuals
-          with special needs. After 3 years of caregiving, I was promoted to the
-          office assitant position where I managed those same individuals
-          finacials and facilitated communication throught the 4 different
-          departments there. Throughout all of this, I was learning to code on
-          the side, waiting for the opportunity to attend a school that would
-          solidify my knowledge.
-        </p>
-        <p>
-          That school came in the form of Lambda School, a 9+ month, fully
-          immersive full stack bootcamp. I began Lambda in April of 2019, and
-          can proudly say I graduated in January of 2020. I'm thrilled to begin
-          my career in web development, and would love to hear from you! Let's
-          find out what my skills can do for your company.
+          the American Fork, Utah area. I'm a CSS warrior, web-component
+          advocate, and React enthusiast.
         </p>
       </AboutMeWrapper>
       <SkillsWrapper>
@@ -177,6 +143,13 @@ const AboutMe = (props) => {
             <p>Solid JavaScript fundamentals</p>
           </div>
           <h3>JavaScript</h3>
+        </Skills>
+        <Skills>
+          <i className="fa-code" />
+          <div className="hoverSkills">
+            <p>Very familiar with building web-components in Stencil JS</p>
+          </div>
+          <h3>Stencil</h3>
         </Skills>
         <Skills>
           <i className="fab fa-python" />

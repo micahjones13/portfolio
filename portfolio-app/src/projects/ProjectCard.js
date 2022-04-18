@@ -1,73 +1,53 @@
 import React from "react";
+import { data } from "../assets/data";
 import styled from "styled-components";
+import Grid from "@material-ui/core/Grid";
+import CustomCard from "./Card.js";
 
-const ProjectCardWrapper = styled.div`
-  // height: 50vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  img {
-    width: 50%;
+const Header = styled.h1`
+  margin: 0;
+  padding-bottom: 1%;
+  color: black;
+  font-family: "Gayathri", sans-serif;
+
+  @media (max-width: 600px) {
+    margin-top: 2%;
   }
-`;
-const InfoWrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: center;
-  .link-div {
-    display: flex;
-    justify-content: space-around;
-    width: 33%;
+  @media (max-width: 400px) {
+    font-size: 2rem;
   }
-  .git-div {
-    background: lightgrey;
+
+  .break {
+    width: 85%;
+    border: none;
     color: black;
-    border: 1px solid black;
-    border-radius: 5px;
-    padding: 2%;
-    cursor: pointer;
-    :hover {
-      transform: scale(1.1);
-    }
-  }
-  .dep-div {
-    background: lightgrey;
-    color: black;
-    border: 1px solid black;
-    border-radius: 5px;
-    padding: 2%;
-    cursor: pointer;
-    :hover {
-      transform: scale(1.1);
-    }
+    background-color: black;
+    height: 2px;
   }
   a {
     text-decoration: none;
-    width: 30%;
+    color: white;
+    cursor: default;
   }
-  img {
-    position: relative;
-    z-index: 1;
+  #recent-projects {
+    color: black;
   }
 `;
-const ProjectCard = props => {
+
+const ProjectCard = () => {
   return (
-    <ProjectCardWrapper>
-      <h2>{props.project.title}</h2>
-      <InfoWrapper>
-        <img src={props.project.image} alt="project snip" />
-        <div className="link-div">
-          <a href={props.project.githubRepo}>
-            <div className="git-div">Github</div>
-          </a>
-          <a href={props.project.deploymentURL}>
-            <div className="dep-div">Deployed Site</div>
-          </a>
-        </div>
-        <h5>{props.project.description}</h5>
-      </InfoWrapper>
-    </ProjectCardWrapper>
+    <div className="project-card">
+      <Header>
+        {/* eslint-disable-next-line */}
+        <a name="recent-projects" id="recent-projects">
+          Recent Projects
+        </a>
+        <hr className="break" />
+      </Header>
+      <Grid container spacing={3}>
+        <CustomCard cards={data} />
+      </Grid>
+    </div>
   );
 };
 
