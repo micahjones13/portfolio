@@ -278,7 +278,11 @@ const SliderArticle = () => {
         </p>
         <p>
           You can see my entire example at this CodePen{" "}
-          <a href="https://codepen.io/micahjones/pen/gOWXRjY" target="_blank">
+          <a
+            href="https://codepen.io/micahjones/pen/gOWXRjY"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             here
           </a>
           .
