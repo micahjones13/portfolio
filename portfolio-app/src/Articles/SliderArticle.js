@@ -4,8 +4,8 @@ import ArticleHeader from "../components/articles/ArticleHeader";
 import sliderImg from "../assets/img/slider.png";
 
 const Wrapper = styled.article`
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 10%;
+  margin-right: 10%;
   padding: 5%;
   text-align: left;
   h1 {
@@ -55,6 +55,8 @@ const Wrapper = styled.article`
     pre {
       white-space: pre-wrap;
     }
+    margin-left: auto;
+    margin-right: auto;
   }
   @media (max-width: 900px) {
     h1 {

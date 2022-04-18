@@ -57,7 +57,7 @@ const NavItems = styled.div`
     width: 60%;
   }
   @media (min-width: 900px) {
-    width: 40%;
+    width: 20%;
   }
 `;
 const Socials = styled.div`
